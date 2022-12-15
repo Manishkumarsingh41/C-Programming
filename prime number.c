@@ -1,36 +1,29 @@
-
-
-#include <math.h>
 #include <stdio.h>
-int main()
-{
-	int n, i, flag = 1;
 
-	printf("Enter a number: \n");
+int main() {
 
-	scanf("%d", &n);
+  int n, i, flag = 0;
+  printf("Enter a positive integer: ");
+  scanf("%d", &n);
 
-	e from 2 to sqrt(n) for (i = 2; i <= sqrt(n); i++)
-	{
+  
+  if (n == 0 || n == 1)
+    flag = 1;
 
-		if (n % i == 0)
-		{
-			flag = 0;
-			break;
-		}
-	}
+  for (i = 2; i <= n / 2; ++i) {
 
-	if (n <= 1)
-		flag = 0;
+  
+    if (n % i == 0) {
+      flag = 1;
+      break;
+    }
+  }
 
-	if (flag == 1)
-	{
-		printf("%d is a prime number", n);
-	}
-	else
-	{
-		printf("%d is not a prime number", n);
-	}
+ 
+  if (flag == 0)
+    printf("%d is a prime number.", n);
+  else
+    printf("%d is not a prime number.", n);
 
-	return 0;
+  return 0;
 }
