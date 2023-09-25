@@ -10,4 +10,4 @@ void main()
        fact = fact * i;
    }
    printf("Factorial of %d is %ld", n , fact);
-}
+} 
