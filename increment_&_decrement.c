@@ -1,6 +1,5 @@
 // Program to difference between post increment and post decrement & pre increment and pre decrement.
-#include <stdio.h>
-
+#include <stdio.h>
 void main()
 {
 
