@@ -4,8 +4,7 @@ int main()
 {
     int length, breadth;
     printf("What is the length of your rectangle\n");
-    scanf("%d", &length);
-
+    scanf("%d", &length);
     printf("What is the breadth of your rectangle\n");
     scanf("%d", &breadth);
 
