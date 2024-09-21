@@ -9,4 +9,5 @@ int main (){
     // 0
     printf("The value of result is %d", result);
     return 0;
+
 }
